@@ -26,6 +26,14 @@ module "aci_l3out" {
       interconnect_subnet = "172.16.0.0/30"
     }
   }
-
+  
+  bgp_peers = {
+    primary = {
+      address   = "172.16.1.1"
+      local_as  = 10
+      remote_as = 200
+      password  = "provider-password-1"
+    }
+ 
   static_routes = ["0.0.0.0/0"]
 }
