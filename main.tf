@@ -15,17 +15,17 @@ module "aci_l3out" {
       is_vpc              = false
       vlan_id             = 301
       mtu                 = 1500
-      interconnect_subnet = "172.16.0.0/30"
+      interconnect_subnet = "172.16.250.1/30"
     }
   }
   
   bgp_peers = {
     primary = {
-      address   = "172.16.1.1"
+      address   = "172.16.250.1"
       local_as  = 10
       remote_as = 200
       password  = "provider-password-1"
     }
   }
-  static_routes = ["0.0.0.0/0"]
+  #static_routes = ["0.0.0.0/0"]
 }
