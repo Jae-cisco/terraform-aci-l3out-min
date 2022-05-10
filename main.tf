@@ -5,7 +5,7 @@ module "aci_l3out" {
   name        = "jaheo-example-l3out"
   tenant_name = "jaheo-example"
   vrf         = "jaheo-example-vrf"
-  l3_domain   = "jaheo-example-bd"
+  l3_domain   = "jaheo-example-l3domain"
 
   paths = {
     primary = {
