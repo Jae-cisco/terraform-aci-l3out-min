@@ -1,26 +1,4 @@
 
-
-resource "aci_tenant" "terraform_ten" {
-  name = "terraform_ten"
-}
-
-resource "aci_vrf" "vrf1" {
-  tenant_dn = "${aci_tenant.terraform_ten.id}"
-  name      = "vrf1"
-}
-
-resource "aci_bridge_domain" "bd1" {
-  tenant_dn          = "${aci_tenant.terraform_ten.id}"
-  relation_fv_rs_ctx = "${aci_vrf.vrf1.name}"
-  name               = "bd1"
-}
-
-resource "aci_subnet" "bd1_subnet" {
-  bridge_domain_dn = "${aci_bridge_domain.bd1.id}"
-  name             = "Subnet"
-  ip               = "192.168.1.1/24"
-}
-
 #module "aci_tenant" {
  # source  = "qzx/tenant/aci"
  # version = "1.0.0"
