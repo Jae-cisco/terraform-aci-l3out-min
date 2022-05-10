@@ -2,10 +2,10 @@ module "aci_l3out" {
   source  = "qzx/l3out/aci"
   version = "1.0.0"
 
-  name        = "example-l3out"
-  tenant_name = "example"
-  vrf         = "example"
-  l3_domain   = "example-l3out-domain"
+  name        = "jaheo-example-l3out"
+  tenant_name = "jaheo-example"
+  vrf         = "jaheo-example-vrf"
+  l3_domain   = "jaheo-example-bd"
 
   paths = {
     primary = {
