@@ -1,4 +1,3 @@
-
 module "aci_l3out" {
   source  = "qzx/l3out/aci"
   version = "1.0.0"
@@ -27,6 +26,6 @@ module "aci_l3out" {
       remote_as = 200
       password  = "provider-password-1"
     }
- 
+  }
   static_routes = ["0.0.0.0/0"]
 }
