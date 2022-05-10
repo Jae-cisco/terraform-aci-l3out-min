@@ -7,9 +7,6 @@ terraform {
   }
 }
 
-provider "aci" {
-  # Configuration options
-}
 #configure provider with your cisco aci credentials.
 provider "aci" {
   # cisco-aci user name
