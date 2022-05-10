@@ -1,11 +1,4 @@
 
-#module "aci_tenant" {
- # source  = "qzx/tenant/aci"
- # version = "1.0.0"
-
-#  tenant_name = "terraform-jaheo"
-#}
-
 module "aci_l3out" {
   source  = "qzx/l3out/aci"
   version = "1.0.0"
