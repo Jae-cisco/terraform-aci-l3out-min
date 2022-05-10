@@ -2,9 +2,9 @@ module "aci_l3out" {
   source  = "qzx/l3out/aci"
   version = "1.0.0"
 
-  name        = "jaheo-example-l3out"
-  tenant_name = "jaheo-example"
-  vrf         = "jaheo-example-vrf"
+  name        = "Cisco-terraform-test-l3out"
+  tenant_name = "jaheo-terraform-test"
+  vrf         = "jaheo-terraform-test-vrf1"
   l3_domain   = "jaheo-example-l3domain"
 
   paths = {
